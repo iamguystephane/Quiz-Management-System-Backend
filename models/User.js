@@ -12,7 +12,7 @@ const userScheme = new mongoose.Schema({
     unique: true,
     lowercase: true,
   },
-  schoolName: {
+  school: {
     type: String,
     required: true,
     trim: true,
@@ -24,7 +24,7 @@ const userScheme = new mongoose.Schema({
   },
   level: {
     type: String,
-    required: true,
+    required: false,
     trim: true,
   },
   role: {
