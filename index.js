@@ -11,6 +11,7 @@ app.use(express.json());
 
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/protected", require("./routes/protected"));
+app.use("/api", require("./routes/loggedinUser"));
 
 app.get("/", (req, res) => {
   res.send("<h1> Hello world </h1>");
